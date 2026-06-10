@@ -116,17 +116,149 @@ header .sininho {
 }
 
 .frame-celular .footer {
-    padding: 30px 20px;
+    padding: 12px 20px;
     background-color: #ffffff;
     bottom: 0;
     position: absolute;
     width: 100%;
     height: 4.0rem;
-    gap: 70px;
     display: flex;
-    font-size: 25px;
     align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 4px;
+}
+
+.a-text {
+    font-size: 11px;
+    font-weight: 700;
+    color: #312f36;
+    text-align: center;
+    line-height: 1.2;
+    animation: fadeDown 0.5s 0.1s ease both;
+}
+
+.submenu-wrapper {
+    position: relative;
+}
+
+.footer-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 0;
+}
+
+.submenu-mais {
+    position: absolute;
+    bottom: 4.0rem;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 12px 20px;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1.5px solid rgba(88, 67, 145, 0.15);
+    border-radius: 8px;
+    align-items: flex-start;
     justify-content: center;
+}
+
+.submenu-mais.aberto {
+    display: flex;
+    margin-left: -130px;
+    width: 180px;
+}
+
+.submenu-mais a {
+    text-decoration: none;
+    color: #312f36;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.submenu-mais .arrow {
+    position: absolute;
+    top: 116px;
+    right: 24px;
+    width: 0;
+    height: 0;
+    transform: rotate(180deg);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f4f4f4;
+    filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.12));
+}
+
+.title-atividades {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 700;
+    color: #565361;
+    text-align: left;
+    left: 2px;
+    margin-left: 20px;
+    margin-top: 1px;
+    line-height: 1.55;
+    margin-bottom: 10px;
+    animation: fadeDown 0.5s 0.1s ease both;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    width: 100%;
+}
+
+.card-atividades {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.card-atividades-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #312f36;
+    text-align: left;
+    line-height: 1.55;
+}
+
+
+.card-atividades-data {
+    font-size: 14px;
+    font-weight: 500;
+    color: #565361;
+    text-align: left;
+    line-height: 1.55;
+    margin-top: 8px;
+}
+
+.card-atividades-status {
+    font-size: 14px;
+    font-weight: 500;
+    color: #565361;
+    text-align: left;
+    line-height: 1.55;
+    margin-top: 8px;
 }
 
 @media (max-width: 420px) {
