@@ -30,46 +30,42 @@
                     <div class="sub-sub-text"> Turma do 3° DS</div>
                 </div>
 
-                <div class="sininho"><i class="fa-regular fa-bell" style="color: #584391;"></i>
+                <div class="sininho"><i class="fa-regular fa-bell" style="color: #584391; cursor: pointer;"></i>
 
 
                 </div>
             </header>
             <div class="content">
-                <div class="title-atividades"> Proximas atividades
-                </div>
-
-                <div class="cards-container">
-                    <div class="card-atividades">
-                        <div class="card-atividades-title">Matemática - Lista de Exercícios</div>
-
-                        <span class="card-atividades-data">Data de entrega: 20/09/2024</span>
-                        <span class="card-atividades-status">Status: Pendente</span>
+                <section class="resumo-section">
+                    <p class="resumo-title">Resumo do dia</p>
+                    <div class="resumo-scroll-wrap" id="resumoScroll">
+                        <div class="resumo-inner">
+                            <div class="resumo-card verde">
+                                <span class="resumo-card-num">10</span>
+                                <span class="resumo-card-label">Atividades concluídas</span>
+                            </div>
+                            <div class="resumo-card amarelo">
+                                <span class="resumo-card-num">4</span>
+                                <span class="resumo-card-label">Atividades pendentes</span>
+                            </div>
+                            <div class="resumo-card azul">
+                                <span class="resumo-card-num">2</span>
+                                <span class="resumo-card-label">Atividades para hoje</span>
+                            </div>
+                            <div class="resumo-card vermei">
+                                <span class="resumo-card-num">0</span>
+                                <span class="resumo-card-label">Atividades atrasadas</span>
+                            </div>
+                        </div>
                     </div>
+                </section>
 
-                    <div class="cards-container">
-                        <div class="card-atividades">
-                            <div class="card-atividades-title">Matemática - Lista de Exercícios</div>
 
-                            <span class="card-atividades-data">Data de entrega: 20/09/2024</span>
-                            <span class="card-atividades-status">Status: Pendente</span>
-                        </div>
+                <div class="wrapper-atividades">
+                    <h2 class="title-atividades">Atividades</h2>
 
-                        <div class="cards-container">
-                            <div class="card-atividades">
-                                <div class="card-atividades-title">Matemática - Lista de Exercícios</div>
+                    <div class="cards-container" id="cards-container">
 
-                                <span class="card-atividades-data">Data de entrega: 20/09/2024</span>
-                                <span class="card-atividades-status">Status: Pendente</span>
-                            </div>
-
-                            <div class="card-atividades">
-                                <div class="card-atividades-title">Matemática - Lista de Exercícios</div>
-
-                                <span class="card-atividades-data">Data de entrega: 20/09/2024</span>
-                                <span class="card-atividades-status">Status: Pendente</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -106,6 +102,8 @@
             </div>
             <div class="home-linha"></div>
         </div>
+
+        <script src="home.js"></script>
 </body>
 
 </html>
