@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repre</title>
+    <link rel="stylesheet" href="dash.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="fundo-pagina">
+
+        <div class="frame-celular">
+
+            <div class="notificacoes-ilustrativo">
+                <span class="horario">5:67</span>
+                <div class="carga-celular">
+                    <i class="fa-solid fa-battery-three-quarters"></i>
+                </div>
+            </div>
+            <header>
+                <div>
+                    <h2 class="sub-text">Seu desempenho</h2>
+                </div>
+
+                <div class="sininho"><i class="fa-regular fa-bell" style="color: #584391; cursor: pointer;"></i>
+
+
+                </div>
+            </header>
+            <div class="content">
+                <div class="dashboard">
+                    <div class="header-dash">
+                        <div class="header-dash-left">
+                            <div class="bola-header-dash">
+                                <i class="fa-solid fa-chart-line" style="font-size: 18px; color: #584391;"></i>
+                            </div>
+
+                            <div>
+                                <h2>Resumo de atividades</h2>
+                                <p>Seu desempenho geral</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="particoes">
+
+                        <div class="card-particoes">
+                            <div class="topo-particoes">
+                                <div class="circle verdin"><i class="fa-regular fa-circle-check"></i></div>
+                                <span class="numero verdin-text">24</span>
+                            </div>
+
+                            <h3>Concluídas</h3>
+                            <p class="variacao verdin-text">↑ 12%</p>
+                        </div>
+
+                        <div class="divisoria"></div>
+
+                        <div class="card-particoes">
+                            <div class="topo-particoes">
+                                <div class="circle amarelo"><i class="fa-regular fa-clock"></i></div>
+                                <span class="numero amarelo-text">11</span>
+                            </div>
+
+                            <h3>Pendentes</h3>
+                            <p class="variacao amarelo-text">↑ 3%</p>
+                        </div>
+
+                        <div class="divisoria"></div>
+
+                        <div class="card-particoes">
+                            <div class="topo-particoes">
+                                <div class="circle vermeio"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                <span class="numero vermeio-text">5</span>
+                            </div>
+
+                            <h3>Não entregues</h3>
+                            <p class="variacao vermeio-text">↑ 2%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="painel">
+                    <div class="header-painel">
+                        <div class="header-painel-left">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-chart-pie" style="color: #584391;;"></i>
+                            </div>
+
+                            <div>
+                                <h2>Visão geral</h2>
+                                <p>Distribuição das suas atividades</p>
+                            </div>
+                        </div>
+
+                        <div class="switch">
+                            <button class="active">Gráfico</button>
+                            <button>Percentual</button>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-content">
+                        <div class="chart">
+                            <div class="donut">
+                                <div class="center">
+                                    <h1>40</h1>
+                                    <span>total de tarefas</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="legend">
+                            <div class="item">
+                                <div class="info">
+                                    <span class="dot green"></span>
+                                    <p>Concluídas</p>
+                                </div>
+
+                                <span>24 (57%)</span>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <span class="dot yellow"></span>
+                                    <p>Pendentes</p>
+                                </div>
+
+                                <span>11 (26%)</span>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <span class="dot red"></span>
+                                    <p>Não entregues</p>
+                                </div>
+
+                                <span>5 (17%)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <a href="home.html" class="footer-item">
+                    <i class="fa-solid fa-house" style="color: #584391;"></i>
+                    <span class="a-text">Início</span>
+                </a>
+                <a href="#" class="footer-item">
+                    <i class="fa-solid fa-book" style="color: #584391;"></i>
+                    <span class="a-text">Atividades</span>
+                </a>
+                <a href="#" class="footer-item">
+                    <i class="fa-solid fa-chart-line" style="color: #584391;"></i>
+                    <span class="a-text">Desempenho</span>
+                </a>
+                <div class="footer-item submenu-wrapper">
+                    <button class="footer-toggle"
+                        onclick="document.querySelector('.submenu-mais').classList.toggle('aberto')">
+                        <i class="fa-solid fa-bars" style="color: #584391;"></i>
+                        <span class="a-text">Mais</span>
+                    </button>
+                    <div class="submenu-mais">
+                        <div class="arrow"></div>
+                        <a href="#"> <i class="fa-solid fa-gear" style="color: #584391;"></i>
+                            Configurações</a>
+                        <a href="#"> <i class="fa-solid fa-calendar" style="color: #584391;"></i>
+                            Calendário</a>
+                        <a href="#"> <i class="fa-solid fa-users" style="color: #584391;"></i> Gremio e
+                            Atletica</a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-linha"></div>
+        </div>
+
+</body>
+
+</html>
