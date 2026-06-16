@@ -1,0 +1,15 @@
+importante para o https://tidbcloud.com/tidbs
+
+HOST: gateway01.us-east-1.prod.aws.tidbcloud.com
+
+PORT: 4000
+
+USERNAME: 2xQNjpHk4EokqNJ.root
+
+PASSWORD: 5tVY9EIIFILtc0y9
+
+DATABASE: RepreBd
+
+CA: <CA_PATH>
+
+Your current IP address (187.58.18.176) is allowed to connect.
