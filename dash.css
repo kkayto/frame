@@ -194,7 +194,7 @@ header .sininho {
 
 .dashboard {
     width: 112%;
-    height: 170px;
+    height: 175px;
     background: #fff;
     border: 2px solid #c5b7ea;
     border-radius: 15px;
@@ -338,33 +338,44 @@ header .sininho {
     margin: 0 2px;
 }
 
-
 .painel {
     width: 112%;
-    height: 300px;
+    height: 270px;
     margin-top: 7px;
     border-radius: 15px;
     overflow: hidden;
     background: #fff;
     border: 2px solid #cbb8f2;
-    padding: 14px;
+    padding: 18px;
 }
 
 .header-painel {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 10px;
     margin-bottom: 14px;
 }
 
 .header-painel-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-right: 8px;
+    justify-content: center;
 }
 
-.icon-box {
+.header-painel-left h2 {
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 1.1;
+}
+
+.header-painel-left p {
+    margin: 2px 0 0;
+    font-size: 15px;
+    margin-top: 2px;
+    line-height: 1.1;
+}
+
+.icon-header {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -372,50 +383,44 @@ header .sininho {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 3px;
 }
 
-.header-apinel h2 {
-    font-size: 18px;
-    margin-top: 5px;
-    line-height: 1.1;
-}
-
-.header-painel p {
-    font-size: 15px;
-    margin-top: 2px;
-    line-height: 1.1;
-}
-
-.switch {
+.trocas {
     display: flex;
     background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 11px;
-    overflow: hidden;
+    border: 1px solid #d9d4e7;
+    border-radius: 7px;
+    width: fit-content;
 }
 
-.switch button {
+.trocas button {
     border: none;
     background: transparent;
-    padding: 8px 10px;
-    font-size: 12px;
+    padding: 10px 18px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-.switch .active {
-    background: #f0ebff;
+.trocas .active {
+    background: #f8f6fd;
     color: #6c43e6;
 }
 
-.dashboard-content {
+.painel-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
 }
 
-.donut {
+.pizza {
     width: 110px;
     height: 110px;
     border-radius: 50%;
@@ -451,7 +456,7 @@ header .sininho {
     margin-left: 9px;
 }
 
-.legend {
+.dados {
     width: 205px;
     margin-right: -1px;
 }
@@ -470,7 +475,7 @@ header .sininho {
     gap: 5px;
 }
 
-.dot {
+.bola {
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -492,6 +497,156 @@ header .sininho {
     font-size: 16px;
     color: #23253d;
     font-weight: 600;
+}
+
+
+
+.wrapper-painel-porMateria {
+    width: 112%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.painel-porMateria-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-height: 270px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.painel-porMateria-container::-webkit-scrollbar {
+    display: none;
+}
+
+.painel-porMateria {
+    width: 100%;
+    margin-top: 7px;
+    border-radius: 15px;
+    background: #fff;
+    border: 2px solid #cbb8f2;
+    padding: 18px;
+}
+
+.header-painel-porMateria {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.icon-header-painel-porMateria {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ece6fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.header-painel-porMateria-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-painel-porMateria-left h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #565361;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.header-painel-porMateria-left p {
+    font-size: 13px;
+    color: #8b8796;
+    margin: 2px 0 0;
+    line-height: 1.2;
+}
+
+.painel-porMateria-content {
+    width: 100%;
+    gap: 15px;
+}
+
+.materias {
+    margin-bottom: 18px;
+}
+
+.materias:last-child {
+    margin-bottom: 5px;
+}
+
+.materias-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.materias-header span {
+    align-items: right;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+    color: #565361;
+}
+
+.barra-progresso {
+    width: 100%;
+    height: 8px;
+    background: #ece6fb;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progresso {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.3s ease;
+}
+
+.matematica {
+    width: 85%;
+    background: #E24B4A;
+    ;
+}
+
+.portugues {
+    width: 75%;
+    background: #226ed1;
+}
+
+.fisica {
+    width: 80%;
+    background: #7e7d7d;
+}
+
+.banco-dados {
+    width: 90%;
+    background: #19447c;
+}
+
+.quimica {
+    width: 58%;
+    background: #1bb61b;
+}
+
+.sociologia {
+    width: 77%;
+    background: #a5b41d;
+}
+
+.filosofia {
+    width: 88%;
+    background: #6d1cb8;
 }
 
 @media (max-width: 420px) {
