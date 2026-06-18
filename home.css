@@ -307,7 +307,7 @@ header .sininho {
     animation: fadeDown 0.5s 0.1s ease both;
     text-align: left;
     left: 2px;
-    margin-left: -33px;
+    margin-left: -10px;
 }
 
 .resumo-section {
@@ -321,7 +321,7 @@ header .sininho {
     cursor: grab;
     user-select: none;
     -webkit-user-select: none;
-    margin-left: -17px;
+    margin-left: 2px;
 }
 
 .resumo-scroll-wrap::-webkit-scrollbar {
