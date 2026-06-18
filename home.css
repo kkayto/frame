@@ -321,7 +321,7 @@ header .sininho {
     cursor: grab;
     user-select: none;
     -webkit-user-select: none;
-    margin-left: 20px;
+    margin-left: 12px;
 }
 
 .resumo-scroll-wrap::-webkit-scrollbar {
