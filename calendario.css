@@ -1,0 +1,376 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0eef8;
+    min-height: 100vh;
+}
+
+.fundo-pagina {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+    background: linear-gradient(160deg, #f0eef8 0%, #e4dff5 100%);
+}
+
+
+.frame-celular {
+    width: 380px;
+    min-height: 720px;
+    background: #ffffff;
+    border-radius: 44px;
+    border: 1.5px solid rgba(88, 67, 145, 0.15);
+    box-shadow:
+        0 24px 60px rgba(88, 67, 145, 0.12),
+        0 4px 12px rgba(88, 67, 145, 0.08);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.notificacoes-ilustrativo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px 0;
+    color: #312f36;
+}
+
+.horario {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.carga-celular {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #312f36;
+}
+
+.content {
+    flex: 1;
+    padding: 20px 28px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3eefaef;
+}
+
+.home-linha {
+    width: 100px;
+    height: 5px;
+    background: rgba(49, 47, 54, 0.2);
+    border-radius: 99px;
+    margin: 20px auto 16px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+    background: #ffffff;
+    justify-content: space-between;
+    padding-bottom: 12px;
+}
+
+header .sininho {
+    font-size: 33px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+
+header .sub-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #312f36;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 28px;
+    line-height: 1.55;
+    margin-bottom: 2px;
+    animation: fadeDown 0.5s 0.1s ease both;
+}
+
+.frame-celular .footer {
+    padding: 12px 20px;
+    background-color: #ffffff;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 4.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 4px;
+}
+
+.a-text {
+    font-size: 11px;
+    font-weight: 700;
+    color: #312f36;
+    text-align: center;
+    line-height: 1.2;
+    animation: fadeDown 0.5s 0.1s ease both;
+}
+
+.submenu-wrapper {
+    position: relative;
+}
+
+.footer-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 0;
+}
+
+.submenu-mais {
+    position: absolute;
+    bottom: 4.0rem;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 12px 20px;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1.5px solid rgba(88, 67, 145, 0.15);
+    border-radius: 8px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.submenu-mais.aberto {
+    display: flex;
+    margin-left: -130px;
+    width: 180px;
+}
+
+.submenu-mais a {
+    text-decoration: none;
+    color: #312f36;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.submenu-mais .arrow {
+    position: absolute;
+    top: 116px;
+    right: 24px;
+    width: 0;
+    height: 0;
+    transform: rotate(180deg);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f4f4f4;
+    filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.12));
+}
+
+.calendar {
+    width: 350px;
+    background: #fff;
+    border: 2px solid #c5b7ea;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-header button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.weekdays,
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.weekdays {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #777;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.day {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.today {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #584391;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prova {
+    border: 2.5px solid #ff4d4d;
+}
+
+.ferias {
+    border: 2.5px solid #00c853;
+}
+
+.festa {
+    border: 2.5px solid #00b0ff;
+}
+
+.evento-info {
+    margin-top: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    border: 2px solid #c5b7ea;
+    align-items: center;
+    text-align: center;
+}
+
+
+.wrapper-proximos {
+    flex: 1;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 75px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.title-proximo {
+    font-size: 16px;
+    font-weight: 700;
+    color: #565361;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 12px;
+    animation: fadeDown 0.5s 0.1s ease both;
+    position: absolute;
+    text-align: left;
+    left: 2px;
+    margin-left: 20px;
+    margin-top: -25px;
+    line-height: 1.55;
+    margin-bottom: 10px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card-proximos {
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.prova-card {
+    border-left: 4px solid #b81c1c;
+}
+
+.festa-card {
+    border-left: 4px solid #00b0ff;
+}
+
+.ferias-card {
+    border-left: 4px solid #00c853;
+}
+
+.card-proximos-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #312f36;
+    text-align: left;
+    line-height: 1.55;
+    margin-bottom: 8px;
+}
+
+
+.card-proximos-data {
+    font-size: 14px;
+    font-weight: 500;
+    color: #565361;
+    text-align: left;
+    line-height: 1.55;
+    margin-top: 8px;
+}
+
+
+@media (max-width: 420px) {
+    .fundo-pagina {
+        padding: 0;
+        background: #ffffff;
+        align-items: flex-start;
+    }
+
+    .frame-celular {
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+    }
+}

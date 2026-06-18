@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repre</title>
+    <link rel="stylesheet" href="calendario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="fundo-pagina">
+
+        <div class="frame-celular">
+
+            <div class="notificacoes-ilustrativo">
+                <span class="horario">5:67</span>
+                <div class="carga-celular">
+                    <i class="fa-solid fa-battery-three-quarters"></i>
+                </div>
+            </div>
+            <header>
+                <div>
+                    <h2 class="sub-text">Calendario Escolar</h2>
+                </div>
+
+                <div class="sininho"><i class="fa-regular fa-bell" style="color: #584391; cursor: pointer;"></i>
+
+
+                </div>
+            </header>
+            <div class="content">
+                <div class="calendar">
+
+                    <div class="calendar-header">
+                        <button id="prev">❮</button>
+
+                        <h2 id="mes">Julho 2026</h2>
+
+                        <button id="next">❯</button>
+                    </div>
+
+                    <div class="weekdays">
+                        <span>D</span>
+                        <span>S</span>
+                        <span>T</span>
+                        <span>Q</span>
+                        <span>Q</span>
+                        <span>S</span>
+                        <span>S</span>
+                    </div>
+
+                    <div id="calendarDays" class="days"></div>
+
+                </div>
+
+                <div id="eventoInfo" class="evento-info">
+                    Selecione uma data
+                </div>
+
+                <div class="wrapper-proximos">
+                    <div class="cards-container" id="cards-container">
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <a href="home.html" class="footer-item">
+                    <i class="fa-solid fa-house" style="color: #584391;"></i>
+                    <span class="a-text">Início</span>
+                </a>
+                <a href="#" class="footer-item">
+                    <i class="fa-solid fa-book" style="color: #584391;"></i>
+                    <span class="a-text">Atividades</span>
+                </a>
+                <a href="#" class="footer-item">
+                    <i class="fa-solid fa-chart-line" style="color: #584391;"></i>
+                    <span class="a-text">Desempenho</span>
+                </a>
+                <div class="footer-item submenu-wrapper">
+                    <button class="footer-toggle"
+                        onclick="document.querySelector('.submenu-mais').classList.toggle('aberto')">
+                        <i class="fa-solid fa-bars" style="color: #584391;"></i>
+                        <span class="a-text">Mais</span>
+                    </button>
+                    <div class="submenu-mais">
+                        <div class="arrow"></div>
+                        <a href="#"> <i class="fa-solid fa-gear" style="color: #584391;"></i>
+                            Configurações</a>
+                        <a href="calendario.html"> <i class="fa-solid fa-calendar" style="color: #584391;"></i>
+                            Calendário</a>
+                        <a href="#"> <i class="fa-solid fa-users" style="color: #584391;"></i> Gremio e
+                            Atletica</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="calendario.js"></script>
+</body>
+
+</html>
