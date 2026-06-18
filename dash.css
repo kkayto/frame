@@ -507,6 +507,7 @@ header .sininho {
     flex-direction: column;
     align-items: center;
     margin-top: 7px;
+    margin-bottom: 15px;
 }
 
 .painel-porMateria-container {
